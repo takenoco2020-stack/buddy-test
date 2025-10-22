@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>人事×AI_夜の人事部勉強会 vol.1（HTMLスライド）</title>
+<style>
+  :root { --bg:#0b0f19; --fg:#eef1f5; --muted:#a8b0bd; }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Sans","Noto Sans JP","Yu Gothic UI","YuGothic","Meiryo",sans-serif;}
+  .deck{height:100dvh;width:100vw;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .frame{width: min(96vw, 160vh); aspect-ratio: 16 / 9; background:#101626; border-radius:24px; box-shadow:0 10px 40px rgba(0,0,0,.4); position:relative; overflow:hidden; padding:48px}
+  .slide{position:absolute; inset:0; padding:48px; display:flex; flex-direction:column; justify-content:center; gap:20px; opacity:0; transform:translateX(30px); transition:opacity .3s ease, transform .3s ease}
+  .slide.active{opacity:1; transform:none}
+  h1{margin:0; font-size: clamp(28px, 5.5vw, 60px); line-height:1.1}
+  ul{margin:0; padding-left:1.2em; font-size: clamp(16px, 2.2vw, 30px); line-height:1.6}
+  li{margin:.25em 0}
+  .footer{position:absolute;left:48px;right:48px;bottom:28px;display:flex;justify-content:space-between;color:var(--muted);font-size:14px;letter-spacing:.02em}
+  .nav{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+  .btn{background:#1a2240;color:#fff;border:0;padding:10px 14px;border-radius:12px;font-size:14px;cursor:pointer}
+  .btn:active{transform:translateY(1px)}
+  a{color:#7ec2ff}
+  .progress{position:absolute;left:0;right:0;bottom:0;height:6px;background:#0b0f19}
+  .bar{height:100%;width:0;background:#4e7cff;transition:width .2s ease}
+</style>
+</head>
+<body>
+<div class="deck">
+  <div class="frame" id="frame">
+
+    <section class="slide active" data-index="1">
+      <h1>夜の人事部シェア会 vol.1</h1>
+      <ul><li>テーマ・人事×AI</li><li>2024年2月1日</li><li>経営戦略局 竹内 大樹</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>1 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="2">
+      <h1>本日のアジェンダ🔥</h1>
+      <ul><li>・ChatGPTの利用状況のシェア</li><li>・静岡新聞SBSの事例紹介</li><li>・人事×AIで活用事例を考えてみる</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>2 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="3">
+      <h1>ゴール</h1>
+      <ul><li>何らかの気づきや学びを、1つ持ち帰りましょう！</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>3 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="4">
+      <h1>ChatGPTの利用状況のシェア</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>4 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="5">
+      <h1>ChatGPTの利用状況のシェア</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>5 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="6">
+      <h1>ChatGPTの利用状況のシェア</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>6 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="7">
+      <h1>ChatGPTの利用状況のシェア</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>7 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="8">
+      <h1>引用元 : <a href="\1" target="_blank" rel="noopener">\1</a></h1>
+      <ul><li>2022年12月頃にchatGPTがリリースされた</li><li>直後の4月時点での調査から、業務活用している人（レベル4以上）が</li><li>33.1%（7.2%+25.9%）から71.2%と増加している</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>8 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="9">
+      <h1>ChatGPT でどれを試したことがありますか？</h1>
+      <ul><li>①日常会話</li><li>②テキスト翻訳</li><li>③文章の要約</li><li>④文章の添削</li><li>⑤メール文作成</li><li>⑥企画書作成</li><li>⑦プレゼン資料のひな形作成</li><li>⑧プログラミング（マクロ、Python等のコード生成）</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>9 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="10">
+      <h1>参加者さんの回答</h1>
+      <ul><li>①日常会話　②テキスト翻訳　③文章の要約　④文章の添削</li><li>⑤メール文作成　⑥企画書作成　⑦プレゼン資料のひな形作成</li><li>⑧プログラミング（マクロ、Python等のコード生成）</li><li>たけうち</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>10 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="11">
+      <h1>ChatGPT でどれを試したことがありますか？</h1>
+      <ul><li>①日常会話</li><li>②テキスト翻訳</li><li>③文章の要約</li><li>④文章の添削</li><li>⑤メール文作成</li><li>⑥企画書作成</li><li>⑦プレゼン資料のひな形作成</li><li>⑧プログラミング（マクロ、Python等のコード生成）</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>11 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="12">
+      <h1>ローコード開発とは</h1>
+      <ul><li>できるだけコーディングをせずに</li><li>アプリケーションを開発すること</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>12 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="13">
+      <h1>chatGPTとGASの組み合わせが最強</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>13 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="14">
+      <h1>GAS（Google Apps Script）とは？</h1>
+      <ul><li>Googleが提供しているプログラミングのツールです</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>14 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="15">
+      <h1>ここからGASが開けます👇</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>15 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="16">
+      <h1>GASの使い方</h1>
+      <ul><li>1.プロンプトを入力し、生成したコードをコピーする</li><li>GoogleAppsScript（GAS）のコード</li><li>2.スプレッドシートを開きます。</li><li>3.メニューから「拡張機能」＞「Apps Script」を選択します。</li><li>4.開いたエディタにコピーしたスクリプトを貼り付けます。</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>16 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="17">
+      <h1>5.スクリプトエディタの上部にある「保存」アイコンをクリックして、プロジェクトに名前をつけて保存します。</h1>
+      <ul><li>6.エディタの上部にある「実行」ボタン（三角形のアイコン）をクリックしてスクリプトを実行します。初めて実行する場合は、Googleによる認証が必要になる場合があります。</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>17 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="18">
+      <h1>ワーク①</h1>
+      <ul><li>実際にローコード開発を</li><li>やってみよう</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>18 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="19">
+      <h1>事例：スプレッドシートの各シート名とセル（A1）を読み込んで、自動で新しい</h1>
+      <ul><li>シートに一覧で出力する</li><li>スプレッドシートとGASで下記を実現したい</li><li>各シートのシート名とセルA1を読み込む</li><li>新しいシートを作成し、各シートから読み込んだシート名をA列に出力、B列にはA1を出力してほしい</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>19 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="20">
+      <h1>×</h1>
+      <ul><li>成果物</li><li>①下記、スプレッドシートを開き、ファイル＞コピー作成する</li><li><a href="\1" target="_blank" rel="noopener">\1</a></li><li>②chatGPTで、下記プロンプトをそのまま入力し、出力された</li><li>コードをコピーする</li><li>③コピーして作成したスプレッドシートを開き、メニューから「拡張機能」＞「Apps Script」を選択し、開いたエディタにコピーしたスクリプトを貼り付けます</li><li>④エディタの上部にある「実行」ボタン（三角形のアイコン）をクリックしてスクリプトを実行します。初めて実行する場合は、Googleによる認証が必要になる場合があります。</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>20 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="21">
+      <h1>ChatGPTとGoogleAppsScript</h1>
+      <ul><li>を活用した事例紹介</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>21 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="22">
+      <h1>事例：全70チームの目標設定のシートから、特定の情報を抜き出して一覧化する</h1>
+      <ul><li>プロンプト</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>22 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="23">
+      <h1>スプレッドシートとGASで下記を実現したい。</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>23 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="24">
+      <h1>各シートのB7:B9、B10:B12、B10:B12を読み込み、それぞれをKR1in、KR2in、KR3inとする。</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>24 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="25">
+      <h1>各シートのC7:C9、C13:C15、C16:C18を読み込み、それぞれをKR1out、KR2out、KR3outとする。</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>25 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="26">
+      <h1>各シート名を読み込む。</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>26 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="27">
+      <h1>新しいシートを作成し、A列にシート名を出力、B列にKR1in、KR2in、KR3inを出力する。C列をKR1out、KR2out、KR3outに出力して、一覧にしてほしい</h1>
+      <ul><li>×</li><li>成果物</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>27 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="28">
+      <h1>事例：全70チームのマネージャーの権限を設定した目標設定シートを</h1>
+      <ul><li>googleドライブで自動でフォルダを作り、配布する</li><li>プロンプト</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>28 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="29">
+      <h1>Google Apps Scriptを使用して、Google Driveの特定のフォルダ内に新しいフォルダを作成し、2つの異なるGoogle スプレッドシート（AとB）のコピーをそれぞれ異なる新しいフォルダ（"中計メンバーKR"と"ビジョンOKR"）に配置するスクリプトを書いてください。</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>29 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="30">
+      <h1>さらに、スプレッドシートCから読み取った各チームの名前とリーダーのメールアドレスを使用して、各チームに対応するスプレッドシートのコピーにチーム名を付け、特定のメールアドレス（例：XXX@XXX）のユーザーを所有者として設定し、チームリーダーを編集者として追加してください。最後に、これらのコピーされたスプレッドシートを組織内のユーザーがリンクを持っていれば閲覧可能に設定してください。</h1>
+      <ul><li>×</li><li>成果物</li><li>×</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>30 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="31">
+      <h1>事例：勤怠管理で、打刻忘れをしている社員をチェックする</h1>
+      <ul><li>プロンプト</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>31 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="32">
+      <h1>CSVから、下記の条件に合うレコードを抽出してほしい。</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>32 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="33">
+      <h1>5列目と20列目には時間のデータが入力されている。</h1>
+      <ul><li>行ごとに、5列目と20列目を比較して、20列目の時刻が5列の時刻より4時間以上遅く、かつ26時を超えている行を抽出して、CSVにしてほしい。</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>33 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="34">
+      <h1>時間については、17:00であれば、17時0分と扱い、28:00であれば、28時0分と扱ってください。</h1>
+      <ul><li>仮に、5列目が17:00、20列目が28:00であれば、抽出の対象になります。</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>34 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="35">
+      <h1>1行目はフッターのため、2行目から実施してください。</h1>
+      <ul><li>成果物</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>35 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="36">
+      <h1>※プロンプトではCSVを読み込ませているが、</h1>
+      <ul><li>GASとスプレッドシートを使えば、無料版</li><li>chatGPTでも実現可能</li><li>×</li><li>有料版</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>36 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="37">
+      <h1>事例：評価制度の網羅的テストを実施する</h1>
+      <ul><li>プロンプト</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>37 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="38">
+      <h1>評価制度のシミュレーションをしたい。</h1>
+      <ul><li>評価ランクが、S、A、B、C、Dの五段階ある。</li><li>S=XX、A=XX、B=XX、C=XX、D=XXをスコアとする。</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>38 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="39">
+      <h1>評価ランクでの評価を4回行い、それぞれのスコアにXXを乗じて、合計した数字を昇給スコアとする。</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>39 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="40">
+      <h1>昇給スコアを参照し、XX以上をS、XX以上をA、XX以上をB、XX以上をC、X未満をDとする。これを昇給ランクとする。</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>40 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="41">
+      <h1>考えられるすべてのパターンをCSVで出力してほしい。</h1>
+      <ul><li>成果物</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>41 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="42">
+      <h1>無料版</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>42 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="43">
+      <h1>事例：評価制度で、旧基準と新基準で評価の出現率がどのように変化する</h1>
+      <ul><li>かシミュレーションする</li><li>プロンプト</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>43 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="44">
+      <h1>2つの数値の推移を比較したい。</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>44 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="45">
+      <h1>XグレードからX級まで階層がある。それぞれ、旧基準と新基準のスコアがS・A・B・C・Dの5段階の合計人数が記入されている。</h1>
+      <ul><li>D	            C            	B           	A</li><li>旧　　新　　旧　　新　　旧　　新　　旧　　新</li><li>G1	XX	XX	XX	XX	XX	XX	XX	XX</li><li>G2	XX	XX	XX	XX	XX	XX	XX	XX</li><li>G3	XX	XX	XX	XX	XX	XX	XX	XX</li><li>G4	XX	XX	XX	XX	XX	XX	XX	XX</li><li>G5	XX	XX	XX	XX	XX	XX	XX	XX</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>45 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="46">
+      <h1>旧基準と新基準の人数の変化をグラフで表したい。</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>46 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="47">
+      <h1>成果物</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>47 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="48">
+      <h1>無料版</h1>
+      
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>48 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="49">
+      <h1>ワーク②</h1>
+      <ul><li>人事領域×AIで</li><li>活用できそうな業務を考えよう</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>49 / 50</span></div>
+    </section>
+    
+
+    <section class="slide" data-index="50">
+      <h1>chatGPTでできそうなこと</h1>
+      <ul><li>労務領域で</li><li>年5日の年次有給休暇の未取得、36協定を超えそうな人をcsvから自動でリストアップ</li><li>採用領域で</li><li>内定者クロージングの個別ウェルカムメッセージの自動作成</li><li>応募者がカルチャーマッチしているか、採用基準を満たしているかのジャッジ</li><li>人事制度領域で</li><li>テクニカルスキルの明文化。社員が作成した記事が、記事作成マニュアルの基準に達しているかを自動でジャッジする</li><li>解像度の低い評価基準の言語化の壁打ち</li><li>昇格試験のジャッジ。テキストだけでなく、面接の録画データの分析</li><li>業務領域で</li><li>フォーム問い合わせをチャットツール（slack、chatworks）に転送</li><li>企画書のブラッシュアップ</li><li>KPIに照らし合わせた評価の自動化</li><li>リマインド機能（既読スルーの防止）</li><li>企業のニーズで</li><li>目の前の業務改善に困っている地元中小企業の支援（副業・兼業）</li></ul>
+      <div class="footer"><span>人事×AI_夜の人事部勉強会 vol.1</span><span>50 / 50</span></div>
+    </section>
+    
+    <div class="progress"><div class="bar" id="bar"></div></div>
+  </div>
+  <div class="nav">
+    <button class="btn" id="prev">← Prev</button>
+    <button class="btn" id="next">Next →</button>
+  </div>
+</div>
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = 0;
+  const bar = document.getElementById('bar');
+  const update = () => {
+    slides.forEach((s,idx)=> s.classList.toggle('active', idx===i));
+    bar.style.width = ((i+1)/slides.length*100) + '%';
+  };
+  const next = () => { if (i < slides.length-1) { i++; update(); } };
+  const prev = () => { if (i > 0) { i--; update(); } };
+  document.getElementById('next').onclick = next;
+  document.getElementById('prev').onclick = prev;
+  window.addEventListener('keydown', (e) => {
+    if (['ArrowRight','PageDown',' '].includes(e.key)) next();
+    if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) prev();
+  });
+  update();
+</script>
+</body>
+</html>
