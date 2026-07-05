@@ -1,0 +1,32 @@
+name: Fetch HR/Organization News
+
+on:
+  schedule:
+    # 22:00 UTC = 07:00 JST
+    - cron: "0 22 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm install
+
+      - run: npm run fetch-news
+
+      - name: Commit updated news data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/news.json
+          git diff --cached --quiet && echo "No changes" || git commit -m "Update HR/organization news data"
+          git push

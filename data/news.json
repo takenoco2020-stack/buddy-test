@@ -1,0 +1,14 @@
+{
+  "generatedAt": null,
+  "targetDate": null,
+  "regions": {
+    "nationwide": {
+      "label": "全国",
+      "categories": []
+    },
+    "shizuoka": {
+      "label": "静岡",
+      "categories": []
+    }
+  }
+}
